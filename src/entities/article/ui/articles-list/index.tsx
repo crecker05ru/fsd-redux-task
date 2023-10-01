@@ -11,7 +11,7 @@ export const ArticlesList = ({data}: ArticlesListProps) => {
   return (
     <ul>
       {data && data.map(article => {
-        return (<li><ArticleCard data={article}/></li>)
+        return (<li key={article.id}><ArticleCard data={article}/></li>)
       })}
     </ul>
   )
