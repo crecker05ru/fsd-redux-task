@@ -1,2 +1,2 @@
 export * as articlesModel from './model'
-export { ArticlesView } from './ui/articlesView'
+export * as ArticlesUI from './ui'

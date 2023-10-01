@@ -1,9 +1,10 @@
-import { ArticlesView } from "entities/articles"
+import { ArticlesUI } from "entities/articles";
 
 const ArticlesListPage = () => {
-return <section>
-  <ArticlesView/>
-  </section>
-
-}
-export default ArticlesListPage
+  return (
+    <section>
+      <ArticlesUI.ArticlesView />
+    </section>
+  );
+};
+export default ArticlesListPage;

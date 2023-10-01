@@ -1,4 +1,4 @@
-import { ArticlesList } from "entities/article/ui/articles-list";
+import { ArticlesUI } from "entities/articles";
 import { useEffect, useState } from "react";
 import { getArticlesList } from "shared/api/articles";
 import { IArticle } from "shared/api/models";
@@ -14,8 +14,7 @@ export const ArticlesWidget = () => {
       }
     };
     fetchArticles();
-    // setArticles(getArticles())
   }, []);
   if (!articles) return <h1>No articles</h1>;
-  return articles && <ArticlesList data={articles as IArticle[]} />;
+  return articles && <ArticlesUI.ArticlesList data={articles as IArticle[]} />;
 };

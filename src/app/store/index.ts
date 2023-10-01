@@ -1,4 +1,4 @@
-import { Action, ThunkAction, combineReducers, configureStore, getDefaultMiddleware } from "@reduxjs/toolkit";
+import { Action, ThunkAction, combineReducers, configureStore } from "@reduxjs/toolkit";
 import { articlesModel } from "entities/articles";
 import { articlesrtkApi } from "shared/api/rtk-query/articleService";
 

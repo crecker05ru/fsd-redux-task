@@ -1,4 +1,4 @@
-import { ArticleCard } from "entities/article"
+import { ArticleUI } from "entities/article"
 import { useEffect } from "react"
 import { useParams } from "react-router"
 import { getArticleById } from "shared/api/articles"
@@ -13,5 +13,5 @@ export const ArticleWidget = () => {
     fetchArticle()
   },[params?.id])
 
-  return <ArticleCard/>
+  return <ArticleUI.ArticleCard/>
 }
