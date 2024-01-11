@@ -3,7 +3,6 @@ import { getArticlesList } from "shared/api/articles";
 import { IArticle } from "shared/api/models";
 
 export const fetchArticles = createAsyncThunk('articles/fetchArticles',async () => {
-  console.log('Trigger fetchArticles')
   return getArticlesList()
 })
 
